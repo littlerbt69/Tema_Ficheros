@@ -22,7 +22,7 @@ public class Ejercicio8 {
                 System.out.println("El fichero no es valido.");
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println("El fichero no se ha podido abrir o no existe.");
         }
     }
 }

@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8549af4b-2fa8-4732-bddf-53d43367d7c4" name="Changes" comment="Cambios dia 08/04">
-      <change afterPath="$PROJECT_DIR$/src/Boletin_7_1/Ejercicio9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Boletin_7_1/Matriculas.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Boletin_7_1/MatriculasCorrectas.txt" afterDir="false" />
+    <list default="true" id="8549af4b-2fa8-4732-bddf-53d43367d7c4" name="Changes" comment="Cambios dia 18/04">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Boletin_7_1/Ejercicio8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin_7_1/Ejercicio8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boletin_7_1/Matriculas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin_7_1/Matriculas.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boletin_7_1/MatriculasCorrectas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin_7_1/MatriculasCorrectas.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +62,7 @@
       <workItem from="1712829324297" duration="18000" />
       <workItem from="1712833715971" duration="1328000" />
       <workItem from="1713169254484" duration="6726000" />
-      <workItem from="1713434380134" duration="7067000" />
+      <workItem from="1713434380134" duration="7511000" />
     </task>
     <task id="LOCAL-00001" summary="Cambios dia 08/04">
       <option name="closed" value="true" />
@@ -90,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713440420139</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Cambios dia 18/04">
+      <option name="closed" value="true" />
+      <created>1713443853965</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713443853965</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +105,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Cambios dia 08/04" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios dia 08/04" />
+    <MESSAGE value="Cambios dia 18/04" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios dia 18/04" />
   </component>
 </project>

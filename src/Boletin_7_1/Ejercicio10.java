@@ -20,8 +20,11 @@ public class Ejercicio10 {
             lineas.map(patron::matcher).filter(Matcher::matches).forEach(matcher -> {
                 try {
                     Files.createFile(destino.resolve(matcher.group(1)));
+                    System.out.println("Se ha creado el fichero" + matcher.group(1));
                 } catch (FileAlreadyExistsException e) {
                     System.out.println("Ya existe el fichero" + matcher.group(1));
+                } catch (IOException e) {
+                    System.out.println("No se ha podido crear el fichero" + matcher.group(1));
                 }
             });
         } catch (IOException e) {

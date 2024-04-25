@@ -2,7 +2,6 @@ package Boletin_7_3;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
@@ -13,58 +12,70 @@ import java.io.IOException;
 
 public class Ejercicio2 {
     public static void main(String[] args) {
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         try {
             DocumentBuilder db = dbf.newDocumentBuilder();
-            Document documento = db.parse("./src/Boletin_7_3/web1.html");
-
-            Element raiz = documento.getDocumentElement();
-
+            Document doc = db.parse("./src/Boletin_7_3/web1.html");
+            Element raiz = doc.getDocumentElement();
             Element titulo = (Element) raiz.getElementsByTagName("title").item(0);
-            System.out.println("Titulo de la pagina: " + titulo.getTextContent());
 
-            NodeList div = documento.getElementsByTagName("div");
-            System.out.println("La cantidad de divisores que hay en la pagina son: " + div.getLength());
+            System.out.println("El titulo de la pagina se llama : " + titulo.getTextContent()+ "\n");
 
-            NodeList divValores =  documento.getElementsByTagName("div");
-            int contadorDivValores = 0;
+            System.out.printf("En la pagina hay %d divisores \n",raiz.getElementsByTagName("div").getLength());
 
-            for (int i = 0; i < divValores.getLength(); i++) {
-                Element element = (Element) divValores.item(i);
-
-                if (!element.getAttribute("id").isBlank()) {
-                    contadorDivValores++;
+            NodeList divValores = doc.getElementsByTagName("div");
+            int contDivVal = 0;
+            for (int i = 0; i < divValores.getLength(); i++){
+                Element elemento = (Element) divValores.item(i);
+                if (!elemento.getAttribute("id").isBlank()){
+                    contDivVal++;
                 }
             }
+            System.out.printf("En la página hay %d divisores con valor \n",contDivVal);
 
-            System.out.println("El numero de div con contenido es de: " + contadorDivValores);
-
-            NodeList valoresImagenes =  documento.getElementsByTagName("img");
-
-            for (int i = 0; i < valoresImagenes.getLength(); i++) {
-                Element element = (Element) valoresImagenes.item(i);
-
-                if (!element.getAttribute("alt").isBlank()) {
-                    System.out.println("El texto es el siguiente: " + element.getAttribute("alt"));
+            NodeList imgValor = doc.getElementsByTagName("img");
+            for (int i = 0; i < imgValor.getLength(); i++) {
+                Element elemento = (Element) imgValor.item(i);
+                if (!elemento.getAttribute("alt").isBlank()) {
+                    System.out.println("Texto de la imagen : " + elemento.getAttribute("alt")+ "\n");
                 }
             }
-
-            NodeList todosDivisores =  documento.getElementsByTagName("div");
-
-            for (int i = 0; i < todosDivisores.getLength(); i++) {
-                Element element = (Element) todosDivisores.item(i);
-
-                if (!element.getAttribute("class").equals("noticia")) {
-                    String titular = element.getElementsByTagName("h2").item(0).getTextContent();
-                    System.out.println("Estos son los titulares de la noticia: " + titular);
-                    String textoAlt = ((Element) element.getElementsByTagName("img").item(0)).getAttribute("alt");
-                    System.out.println("Este es el texto alternativo de la noticia: " + textoAlt);
+            NodeList todosLosDivisores = doc.getElementsByTagName("div");
+            for (int i = 0; i < todosLosDivisores.getLength(); i++) {
+                Element elemento = (Element) todosLosDivisores.item(i);
+                if (elemento.getAttribute("class").matches("\bnoticia\b")) {
+                    String titular = elemento.getElementsByTagName("h2").item(0).getTextContent();
+                    System.out.println("Titular: " + titular + "\n");
+                    String textoAlter = ((Element) elemento.getElementsByTagName("img").item(0)).getAttribute("alt");
+                    System.out.printf("Texto de imagen alternativo : " + textoAlter + "\n");
                 }
             }
-
-        } catch (ParserConfigurationException | IOException | SAXException e) {
-            System.out.println("Error de lectura o archivo no encontrado.");
+            NodeList menuPrincipal = doc.getElementsByTagName("div");
+            for (int i = 0; i < menuPrincipal.getLength(); i++){
+                Element elemento = (Element) menuPrincipal.item(i);
+                if (elemento.getAttribute("id").equals("menu-principal")){
+                    NodeList acciones = elemento.getElementsByTagName("li");
+                    System.out.println("Menu: ");
+                    for (int j = 0; j < acciones.getLength();j++){
+                        System.out.println(acciones.item(j).getTextContent());
+                    }
+                }
+            }
+            NodeList todasNoticias = doc.getElementsByTagName("div");
+            for (int i = 0; i < todosLosDivisores.getLength(); i++) {
+                Element elemento = (Element) todasNoticias.item(i);
+                if (elemento.getAttribute("class").equals("noticia")) {
+                    String titular = elemento.getElementsByTagName("h2").item(0).getTextContent();
+                    System.out.println("Titular: " + titular);
+                    String textoDesc = elemento.getElementsByTagName("p").item(0).getTextContent();
+                    System.out.println("Descipcion: " + textoDesc);
+                }
+            }
+        } catch (ParserConfigurationException | SAXException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            System.out.println("El archivo no se ha podido leer o no existe.");
         }
     }
 }

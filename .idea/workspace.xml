@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8549af4b-2fa8-4732-bddf-53d43367d7c4" name="Changes" comment="Cambios dia 29/04">
-      <change afterPath="$PROJECT_DIR$/src/Examen_2021/Aeropuerto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Examen_2021/Aeropuerto2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Examen_2021/Aeropuerto3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Examen_2021/Registros" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Examen_2021/Registros2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Examen_2021/aeropuerto.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Examen_2021/compañias.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_04_2024_9_19_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_04_2024_9_19__Changes_.xml" beforeDir="false" />
+    <list default="true" id="8549af4b-2fa8-4732-bddf-53d43367d7c4" name="Changes" comment="Cambios dia 18/04">
+      <change afterPath="$PROJECT_DIR$/src/Boletin_7_1/Ejercicio3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Boletin_7_1/Ejercicio4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Boletin_7_1/Ejercicio5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Boletin_7_1/salidaEj3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Examen_2022_2023/Ejercicio1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Examen_2022_2023/Ejercicio2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Examen_2022_2023/MiEntradaSalida.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Examen_2022_2023/simpsons.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boletin_7_1/Ejercicio7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin_7_1/Ejercicio7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boletin_7_3/Ejercicio4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boletin_7_3/Ejercicio4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Examen_2021/Aeropuerto3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Examen_2021/Aeropuerto3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Examen_2021/compañias.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Examen_2021/compañias.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,13 +27,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "littlerbt69"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="50c80ea6-5fcd-4128-85cd-8de3be4f08fa" />
+        <option name="url" value="https://github.com/littlerbt69/Tema_Ficheros.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -43,25 +59,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "C:/Users/Alumno/IdeaProjects/Tema_Ficheros/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Alumno/IdeaProjects/Tema_Ficheros/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Alumno\IdeaProjects\Tema_Ficheros\src\Boletin_7_3" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Examen_2022_2023" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -79,10 +94,7 @@
       <workItem from="1713434380134" duration="7511000" />
       <workItem from="1713444083743" duration="21000" />
       <workItem from="1713774151930" duration="6601000" />
-      <workItem from="1714038793878" duration="5939000" />
-      <workItem from="1714046224678" duration="621000" />
-      <workItem from="1714378791788" duration="6454000" />
-      <workItem from="1715152771830" duration="9611000" />
+      <workItem from="1713805173760" duration="472000" />
     </task>
     <task id="LOCAL-00001" summary="Cambios dia 08/04">
       <option name="closed" value="true" />
@@ -140,39 +152,7 @@
       <option name="project" value="LOCAL" />
       <updated>1713777255481</updated>
     </task>
-    <task id="LOCAL-00008" summary="Cambios dia 18/04">
-      <option name="closed" value="true" />
-      <created>1713955451475</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1713955451475</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Cambios dia 18/04">
-      <option name="closed" value="true" />
-      <created>1714048749699</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1714048749699</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Cambios dia 18/04">
-      <option name="closed" value="true" />
-      <created>1714048762956</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1714048762956</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Cambios dia 29/04">
-      <option name="closed" value="true" />
-      <created>1714387391900</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1714387391900</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +162,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Cambios dia 08/04" />
     <MESSAGE value="Cambios dia 18/04" />
-    <MESSAGE value="Cambios dia 29/04" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios dia 29/04" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios dia 18/04" />
   </component>
 </project>

@@ -8,27 +8,39 @@ public class Ejercicio4 {
     public static void main(String[] args) {
         File fichero = new File("./src/Boletin_7_3/quijote.txt");
 
-        try (BufferedReader br = new BufferedReader(new FileReader(fichero))){
+        try (BufferedReader bf = new BufferedReader(new FileReader(fichero))) {
             String linea;
-            String patronRazon = "\\braz[óo]n\\b";
+            String patronRazon = "\\braz[oó]n\\b";
             Pattern patron = Pattern.compile(patronRazon, Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
-
-            int contador = 0;
-
-            while ((linea = br.readLine()) != null) {
-                Matcher m = patron.matcher(linea);
-                while (m.find()) {
-                    contador++;
+            int cont = 0;
+            while ((linea = bf.readLine()) != null) {
+                Matcher matronazo = patron.matcher(linea);
+                while (matronazo.find()) {
+                    cont++;
                 }
             }
+            System.out.println("La palabra razón se ha encontrado " + cont);
 
-            System.out.println("Se ha encontrado la palabra RAZON: " + contador + " veces.");
-
-
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        try (BufferedReader bf = new BufferedReader(new FileReader(fichero))) {
+            String linea;
+            String patronTilde = "\\b[áéíóú]|\\s[Ññ]\\b";
+            Pattern patron = Pattern.compile(patronTilde);
+            int cont = 0;
+            while ((linea = bf.readLine()) != null) {
+                Matcher matronazo = patron.matcher(linea);
+                while (matronazo.find()) {
+                    cont++;
+                }
+            }
+            System.out.println("La palabra razón se ha encontrado " + cont);
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }
+

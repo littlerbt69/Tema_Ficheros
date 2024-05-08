@@ -18,63 +18,37 @@ import java.util.Set;
 
 public class Aeropuerto3 {
     public static void main(String[] args) {
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         try {
             DocumentBuilder db = dbf.newDocumentBuilder();
             Document doc = db.parse("./src/Examen_2021/aeropuerto.xml");
-
             NodeList compañias = doc.getElementsByTagName("compania");
-
             Document doc2 = db.newDocument();
             doc2.appendChild(doc2.createElement("compañias"));
 
             Set <String> nombresCompañias = new HashSet<>();
 
-            for (int i = 0; i < compañias.getLength(); i++) {
+            for (int i = 0; i < compañias.getLength(); i++){
                 String compañia = compañias.item(i).getTextContent();
                 nombresCompañias.add(compañia);
-
             }
-
             nombresCompañias.stream().forEach(compañia -> {
                 Element nuevaCompañia = doc2.createElement("compañia");
-                nuevaCompañia.setAttribute("nombre", compañia);
+                nuevaCompañia.setAttribute("nombre",compañia);
                 doc2.getDocumentElement().appendChild(nuevaCompañia);
             });
 
             File f = new File("./src/Examen_2021/compañias.xml");
-
             Transformer transformer = TransformerFactory.newInstance().newTransformer();
-
-            // 3º Establecemos algunas opciones de salida, como por ejemplo, la codificación
-            // de salida.
-
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-
             transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-
-            // 4º Creamos el StreamResult, que intermediará entre el transformador y el
-            // archivo de destino.
-
             StreamResult result = new StreamResult(f);
-
-            // 5º Creamos el DOMSource, que intermediará entre el transformador y el árbol
-            // DOM.
-
-            DOMSource source = new DOMSource(doc);
-
-            // 6º Realizamos la transformación.
-
+            DOMSource source = new DOMSource(doc2);
             transformer.transform(source, result);
-        } catch (ParserConfigurationException | IOException | SAXException e) {
-            throw new RuntimeException(e);
-        } catch (TransformerConfigurationException e) {
-            throw new RuntimeException(e);
-        } catch (TransformerException e) {
+
+        } catch (ParserConfigurationException | IOException | SAXException | TransformerException e) {
             throw new RuntimeException(e);
         }
-
-
     }
 }
